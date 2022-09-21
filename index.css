@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 20px;
+    background-color: white;
+    z-index: 999;
+    box-shadow: 0 -1px 5px 5px rgb(212, 206, 206);
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 4px;
+    text-decoration: none;
+    position: fixed;
+    width: 100%;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header .links-two a,
+.links-one a {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+header .origin {
+    margin-left: 10px;
+}
+
+a:hover {
+    background-color: rgb(214, 211, 211);
+}
+
+header>a:hover {
+    background-color: rgb(214, 211, 211);
+}
+
+.mainPage img {
+    height: auto;
+    max-width: 100%;
+}
+
+.mainPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainPage .text-page {
+    position: absolute;
+    letter-spacing: 5px;
+    color: white;
+}
+
+.text-page b {
+    background-color: rgba(0, 0, 0, 0.671);
+    font-size: 35px;
+    padding: 10px 15px;
+}
+
+.text-page span {
+    font-size: 30px;
+    margin-left: 60px;
+}
+
+.main-title {
+    /* margin-left: 35px; */
+    padding: 60px 20px 32px 36px;
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.container .card {
+    width: 310px;
+    margin: 6px;
+}
+
+.card img {
+    background-size: cover;
+    width: 100%;
+}
+
+.card .local-title {
+    position: absolute;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+.about .text {
+    padding: 0px 20px 30px 36px;
+}
+
+.card-about {
+    background-color: white;
+    width: 310px;
+    margin: 6px;
+}
+
+.card-about img {
+    width: 100%;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+
+.card-about p:nth-of-type(1) {
+    margin: 20px 0px;
+    color: gray;
+    letter-spacing: 1px;
+}
+
+.card-about h3 {
+    letter-spacing: 1px;
+}
+
+.card-about p:nth-of-type(2) {
+    margin: 10px 0px 15px 0;
+}
+
+.card-about a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    background-color: rgb(232, 232, 232);
+}
+
+.card-about a:hover {
+    background-color: rgb(214, 211, 211);
+}
+
+.contact p {
+    margin: 0px 35px;
+    margin-bottom: 15px;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    margin: 15px;
+    margin-left: 35px;
+    display: block;
+    /* max-width: 1275px; */
+    width: calc(100% - 70px);
+    border: 1px solid gray;
+}
+
+.send-msg {
+    margin-left: 35px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    outline: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+}
+
+.send-msg:hover {
+    color: black;
+    background-color: rgb(214, 211, 211);
+}
+
+.photo img {
+    width: 1275px;
+    height: auto;
+    margin: 35px 35px 15px 35px;
+    background-size: cover;
+}
+
+footer {
+    text-align: center;
+    padding: 25px 0;
+    background-color: black;
+    color: white;
+    letter-spacing: 1px;
+}
+
+footer span {
+    color: greenyellow;
+}
+
+@media (max-width:600px) {
+    header .links-two {
+        display: none;
+    }
+    .mainPage .text-page span {
+        display: none;
+    }
+}
+
+@media (min-width:235px) {
+    .text-page b {
+        position: absolute;
+        margin-left: -45px;
+        margin-top: -10px;
+    }
+    .container {
+        padding: 0 10px;
+    }
+    .main-title {
+        margin-left: -1px;
+    }
+    .about p:nth-of-type(2) {
+        margin-left: -1px;
+    }
+    .photo img {
+        width: calc(100% - 70px);
+    }
+}
+
+@media (min-width:600px) and (max-width:612px) {
+    .text-page b {
+        position: absolute;
+        top: -50%;
+        left: 50%;
+        margin-left: -35px;
+        margin-top: -25px;
+    }
+    .text-page span {
+        position: absolute;
+        margin-left: -80px;
+        margin-top: 45px;
+    }
+}
